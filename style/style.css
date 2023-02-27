@@ -5,3 +5,24 @@
     --light-gray: #3A546D;
     --black: #333333;
 }
+
+body{
+    color: var(--white);
+}
+
+header, #bottom-footer{
+    background-color: var(--dark-gray);
+}
+
+#hero, #about{
+    background-color: var(--aqua);
+}
+
+#portfolio, #contact{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+#top-footer{
+    background-color: var(--light-gray);
+}
