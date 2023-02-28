@@ -102,3 +102,7 @@ h1{
     background-color: var(--aqua);
     color: var(--white);
 }
+
+.ad-btn-about{
+    border: 1px solid var(--white);
+}
