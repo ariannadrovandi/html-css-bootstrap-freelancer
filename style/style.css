@@ -91,3 +91,9 @@ h1{
 .img-container:hover::after{
     opacity: 1;
 }
+
+.btn-aqua{
+    background-color: var(--aqua);
+    color: var(--white);
+    border-color: var(--aqua);
+}
