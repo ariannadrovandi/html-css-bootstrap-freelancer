@@ -53,3 +53,8 @@ h1{
     border-radius: 2px;
     background-color: var(--white);
 }
+
+.star.black::before, 
+.star.black::after{
+    background-color: var(--black);
+}
