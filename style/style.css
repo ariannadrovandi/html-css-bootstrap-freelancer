@@ -10,7 +10,7 @@ body{
     color: var(--white);
 }
 
-header, #bottom-footer{
+header, nav, #bottom-footer{
     background-color: var(--dark-gray);
 }
 
@@ -25,4 +25,31 @@ header, #bottom-footer{
 
 #top-footer{
     background-color: var(--light-gray);
+}
+
+#hero img{
+    max-width: 250px;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+.star{
+    width: 50%;
+}
+
+.star i{
+    display: block;
+    width: 20%;
+    font-size: 2rem;
+}
+
+.star::before, .star::after{
+    content: '';
+    display: block;
+    width: 40%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--white);
 }
