@@ -97,3 +97,8 @@ h1{
     color: var(--white);
     border-color: var(--aqua);
 }
+
+#about button{
+    background-color: var(--aqua);
+    color: var(--white);
+}
