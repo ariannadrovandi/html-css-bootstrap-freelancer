@@ -9,29 +9,31 @@
     <link rel="stylesheet" href="./style/style.css">
     <title>Bootstrap Freelancer</title>
 </head>
-<body>
-    <header class="text-white">
-        <nav class="container text-uppercase navbar navbar-expand-lg ">
-            <div class="nav-dark container-fluid">
-                <a class="navbar-brand text-white" href="#">start bootstrap</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+<body class="bg-body">
+    <header>
+        <nav class="navbar bg-dark navbar-expand-md" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand text-uppercase" href="#"><h4>start bootstrap</h4></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynav" aria-controls="mynav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active text-white  " aria-current="page" href="#">portfolio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-white  " href="#">about</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-white  " href="#">contact</a>
-                      </li>
+                <div class="collapse navbar-collapse" id="mynav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase active" aria-current="page" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#">About</a>
+                        </li>
+                        <li class="nav-item text-uppercase">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </div>
-        </nav>
+          </nav>
     </header>
 
     <main>
@@ -103,11 +105,29 @@
         </section>
 
         <section id="contact" class="my-5">
-            <div class="container text-uppercase text-center">
-                <h2 class="display-6 fw-semibold">contact</h2>
-                <div class="star black w-50 mx-auto d-flex justify-content-center align-items-center">
+            <div class="container">
+                <h2 class="display-6 fw-semibold text-center text-uppercase">contact</h2>
+                <div class="star black w-50 mx-auto text-center d-flex justify-content-center align-items-center">
                     <span><i class="fa-solid fa-star"></i></span>
                 </div>
+
+                <form novalidate>
+                    <div class="mb-3">
+                        <input type="text" class="form-control border-0 border-bottom" id="user-name" name="user-name" required placeholder="Name"> <!--NAME da inserire sempre uguale a ID e FOR-->
+                        <div id="user-name" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control border-0 border-bottom" id="user-email" name="user-email" required placeholder="Email address">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control border-0 border-bottom" id="user-phone" name="user-phone" required placeholder="Phone number"> 
+                    </div>
+                    <div class="mb-3 form-check">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>
         </section>
     </main>
