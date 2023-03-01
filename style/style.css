@@ -111,3 +111,15 @@ h1{
     width: 35px;
     height: 35px;
 }
+
+#top-footer .row:last-child p span{
+    color: var(--aqua);
+}
+
+.ad-whidt-80{
+    width: 80%;
+}
+
+.ad-whidt-65{
+    width: 65%;
+}
